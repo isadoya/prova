@@ -1,0 +1,39 @@
+// Exercício 1: Criar um objeto carro com propriedades marca, modelo e ano
+// Explicação: Objetos em JavaScript são coleções de propriedades definidas em pares chave-valor
+const carro = {
+    marca: "Toyota",      // Propriedade 'marca' com valor 'Toyota'
+    modelo: "Corolla",    // Propriedade 'modelo' com valor 'Corolla'
+    ano: 2020             // Propriedade 'ano' com valor numérico 2020
+};
+
+// Exibir as propriedades do objeto carro no console
+console.log(carro.marca);   // Saída: Toyota
+console.log(carro.modelo);  // Saída: Corolla
+console.log(carro.ano);     // Saída: 2020
+
+// Exercício 2: Remover a propriedade 'email' do objeto usuario
+// Explicação: Usamos a palavra-chave 'delete' para remover uma propriedade de um objeto
+const usuario = {
+    nome: "Fernanda",
+    email: "fernanda@email.com",
+    idade: 25
+};
+
+// Remover a propriedade 'email'
+delete usuario.email;
+
+// Exibir o objeto atualizado sem a propriedade 'email'
+console.log(usuario); // Saída: { nome: 'Fernanda', idade: 25 }
+
+// Exercício 3: Alterar a idade da pessoa para 31 anos
+// Explicação: Podemos acessar e alterar diretamente uma propriedade usando a notação de ponto
+const pessoa = {
+    nome: "Carlos",
+    idade: 29
+};
+
+// Alterar o valor da propriedade 'idade'
+pessoa.idade = 31;
+
+// Exibir o novo valor da idade
+console.log(pessoa.idade); // Saída: 31
