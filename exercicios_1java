@@ -1,0 +1,80 @@
+// Lista de Exercícios Resolvidos de JavaScript
+
+// 1. Função para somar dois números
+function somar(a, b) {
+  return a + b;
+}
+console.log("1:", somar(5, 3)); // 8
+
+// 2. Função que retorna 'Par' ou 'Ímpar'
+function parOuImpar(numero) {
+  return numero % 2 === 0 ? 'Par' : 'Ímpar';
+}
+console.log("2:", parOuImpar(4)); // 'Par'
+
+// 3. Converter metros em centímetros e milímetros
+function converter(metros) {
+  const centimetros = metros * 100;
+  const milimetros = metros * 1000;
+  return { centimetros, milimetros };
+}
+console.log("3:", converter(2)); // { centimetros: 200, milimetros: 2000 }
+
+// 4. Adicionar frutas ao final do array
+const frutas = ['maçã', 'banana'];
+frutas.push('laranja', 'uva');
+console.log("4:", frutas);
+
+// 5. Remover o último elemento do array
+const numeros1 = [1, 2, 3, 4, 5];
+const ultimoNumero = numeros1.pop();
+console.log("5:", ultimoNumero, numeros1);
+
+// 6. Remover o primeiro elemento do array
+const cores = ['vermelho', 'azul', 'verde'];
+const primeiraCor = cores.shift();
+console.log("6:", primeiraCor, cores);
+
+// 7. Adicionar elementos no início do array
+const animais = ['cachorro', 'gato'];
+animais.unshift('elefante', 'leão');
+console.log("7:", animais);
+
+// 8. Substituir os dois primeiros elementos
+const numeros2 = [10, 20, 30, 40, 50];
+numeros2.splice(0, 2, 5, 15);
+console.log("8:", numeros2);
+
+// 9. Criar novo array com elementos 'b', 'c', 'd'
+const letras = ['a', 'b', 'c', 'd', 'e'];
+const subArray = letras.slice(1, 4);
+console.log("9:", subArray);
+
+// 10. Concatenar dois arrays
+const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+const combinado = array1.concat(array2);
+console.log("10:", combinado);
+
+// 11. Função com saudação personalizada
+function saudacao(nome) {
+  return `Olá, ${nome}!`;
+}
+console.log("11:", saudacao("Carlos"));
+console.log("11:", saudacao("Ana"));
+
+// 12. Diferença entre var, let e const
+// var: escopo de função, pode ser redeclarada e reatribuída
+// let: escopo de bloco, pode ser reatribuída
+// const: escopo de bloco, NÃO pode ser reatribuída
+
+// 13. Acesso a variável não definida
+// console.log(x); // ReferenceError: x is not defined
+
+// 14. Uso do typeof
+let nome = "Ana";
+let idade = 25;
+let ativo = true;
+console.log("14:", typeof nome);   // string
+console.log("14:", typeof idade);  // number
+console.log("14:", typeof ativo);  // boolean
